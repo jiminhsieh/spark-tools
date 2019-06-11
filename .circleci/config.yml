@@ -1,8 +1,5 @@
 version: 2.1
 
-orbs:
-  queue: eddiewebb/queue@1.1.2
-
 aliases:
   - &environment
     docker:
