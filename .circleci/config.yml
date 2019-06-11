@@ -76,10 +76,6 @@ commands:
   release_all:
     description: release all sub-project
     steps:
-      # comment to test blocking queue
-      - queue/until_front_of_line:
-          # wait 1 hour max
-          time: "60"
       - checkout
       - restore_cache: *restore_cache_dependencies
       - run: *configure_gpg
