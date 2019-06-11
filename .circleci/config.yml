@@ -63,6 +63,7 @@ commands:
     steps:
       - checkout
       - restore_cache: *restore_cache_dependencies
+      - run: *fmt_check
       #- run:
       #    name: check
       #    command: ls -R
